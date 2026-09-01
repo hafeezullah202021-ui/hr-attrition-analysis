@@ -109,7 +109,11 @@ These records were **flagged, not deleted** — removing a third of the file wou
 3. Open `excel/HR_Attrition_Analysis.xlsx` to inspect the same analysis as live formulas.
 4. Open `powerbi/HR_Attrition_Dashboard.pbix` in Power BI Desktop and repoint the source to your local copy of the data.
 
-## Method
+## Methodology & tools
+
+**Tools used:** SQL · Excel · Power BI · Python (pandas, statsmodels) for statistical analysis
+
+**Process:** Independent analysis with iterative refinement, using AI assistance for coding support and documentation review. The business framing, analytical decisions, interpretation and conclusions are my own.
 
 ```
 Business understanding → Problem definition → Stakeholders → Business questions
