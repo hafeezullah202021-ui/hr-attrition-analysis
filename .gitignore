@@ -1,0 +1,70 @@
+# ── OS ────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ── Office temp / lock files ──────────────────────────────────────
+# Excel and Word leave these behind while a file is open.
+# The deliverables (.xlsx, .docx) ARE tracked — only the lock files are ignored.
+~$*.xlsx
+~$*.xlsm
+~$*.docx
+~$*.pptx
+*.tmp
+.~lock.*#
+
+# ── Power BI ──────────────────────────────────────────────────────
+# powerbi/HR_Attrition_Dashboard.pbix IS tracked (1.6 MB, well under the
+# 100 MB GitHub limit). Only backups and cache are ignored.
+*.pbix.bak
+.pbi/
+
+# ── Data ──────────────────────────────────────────────────────────
+# The source extract data/Emp_attrition_csv.csv IS tracked (9.4 MB).
+# Intermediate and derived datasets are not — they are reproducible from
+# the raw file via sql/hr_attrition_analysis.sql.
+data/clean_*.csv
+data/*_output.csv
+
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+.pytest_cache/
+
+# ── R ─────────────────────────────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+
+# ── Working / intermediate files ──────────────────────────────────
+# Scratch outputs from the analysis pipeline. The cleaned dataset is
+# reproducible from the raw file via sql/hr_attrition_analysis.sql, so it
+# is not tracked.
+clean_attrition.csv
+cleaning_log.csv
+odds_ratios.csv
+kpis.json
+/scratch/
+/tmp/
+/output/
+*.log
+
+# ── Credentials — never commit ────────────────────────────────────
+*.pem
+*.key
+secrets.*
+config.local.*
+connection_strings.*
+.odbc.ini

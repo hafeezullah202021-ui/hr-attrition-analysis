@@ -1,0 +1,16 @@
+# Normalise text files in the repo, leave data and binaries untouched.
+* text=auto
+
+*.md   text
+*.sql  text
+*.json text
+
+# Data file: preserve byte-for-byte (UTF-8 BOM, original line endings).
+*.csv  -text
+
+# Binary deliverables — never diff or line-ending-convert these.
+*.xlsx binary
+*.xlsm binary
+*.docx binary
+*.pbix binary
+*.png  binary
